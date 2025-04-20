@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Простая игра</title>
+    <style>
+        /* CSS внутри HTML */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Кликер!</h1>
+    <p>Кликов: <span id="counter">0</span></p>
+    <button onclick="clickCounter()">Жми меня!</button>
+
+    <!-- JS внутри HTML -->
+    <script>
+        let count = 0;
+        function clickCounter() {
+            count++;
+            document.getElementById("counter").textContent = count;
+        }
+    </script>
+</body>
+</html>
